@@ -2,7 +2,7 @@ print("Hola y ¡BIENBENIDO! a tu simulador de loteria")
 
 #Menú
 def mostrar_menu():
-    print("1. jugar loteria")
+    print("1. jugar loteria :)")
     print("2. salir")
 
 def jugarLoteria():
