@@ -2,27 +2,36 @@ print("Hola y ¡BIENBENIDO! a tu simulador de loteria")
 
 #Menú
 def mostrar_menu():
-    print("1. jugar loteria :)")
-    print("2. salir")
+    print("Menú:")
+    print("1. Jugar loteria 1")
+    print("2. Ver historial de intentos 2")
+    print("3. Salir 3")
 
-def jugarLoteria():
-    print("comensemos a jugar")
+def jugarLoteria_1():
+    print("Comenzemos a jugar")
+    
 
-def salir():
-    print("Adios asta luego")
+def verHistorialDeIntentos_2():
+    print("Tus intentos son")
 
-def main():
-    while True:
-        mostrar_menu()
-        opcion = input("Selecciona una opción: ")
-        
-        if opcion == '1':
-            jugarLoteria()
-        elif opcion == '2':
-            salir()
-            break
-        else:
-            print("Opción no válida, por favor intenta de nuevo.")
+def salir_3():
+    print("Adiós nos vemos pronto")
+
+# Variable para almacenar la opción seleccionada
+opcion_seleccionada = 0
+
+# Mostrar el menú y solicitar una opción al usuario
+while opcion_seleccionada not in [1, 2, 3]:
+    mostrar_menu()
+    opcion_seleccionada = int(input("Selecciona una opción (1-3): "))
+
+# Ejecutar la opción seleccionada
+if opcion_seleccionada == 1:
+    jugarLoteria_1()
+elif opcion_seleccionada == 2:
+    verHistorialDeIntentos_2()
+elif opcion_seleccionada == 3:
+    salir_3()
 
 import random
 
